@@ -5,27 +5,21 @@
   <title>VicOne RD Monthly Update</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style type="text/css">
-    /* 基礎重置 */
-    body { margin: 0; padding: 0; min-width: 100%; background-color: #f4f4f4; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-    img { line-height: 100%; text-decoration: none; -ms-interpolation-mode: bicubic; border: 0; }
-    
-    /* 手機版優化 */
+    /* 針對 Gmail 與 iOS Mail 的強制設定 */
     @media only screen and (max-width: 600px) {
-      .main-container { width: 100% !important; max-width: 100% !important; }
-      .content-cell { padding: 30px 20px !important; } /* 減少側邊留白 */
-      .header-cell { padding: 30px 0 !important; }
-      h1 { font-size: 24px !important; }
+      .full-width { width: 100% !important; min-width: 100% !important; }
+      .mobile-padding { padding-left: 20px !important; padding-right: 20px !important; }
     }
   </style>
 </head>
-<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: Arial, Helvetica, sans-serif;">
+<body style="margin: 0; padding: 0; background-color: #f4f4f4; -webkit-text-size-adjust: 100%;">
   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f4f4f4;">
     <tr>
-      <td align="center">
-        <table border="0" cellpadding="0" cellspacing="0" width="680" class="main-container" style="width: 100%; max-width: 680px; margin: 0 auto; border-collapse: collapse; background-color: #ffffff;">
+      <td align="center" style="padding: 0;">
+        <table border="0" cellpadding="0" cellspacing="0" class="full-width" style="width: 100%; max-width: 680px; background-color: #ffffff; border-collapse: collapse;">
           
           <tr>
-            <td align="center" class="header-cell" style="background-color: #111827; padding: 40px 0;">
+            <td align="center" style="background-color: #111827; padding: 40px 0;">
               <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
                   <td style="border: 2px solid #ffffff; padding: 5px 15px; color: #ffffff; font-size: 22px; font-weight: bold; letter-spacing:1px;">
@@ -40,30 +34,22 @@
           </tr>
 
           <tr>
-            <td>
-              <img src="banner.jpg" alt="VicOne AI Taskforce" width="680" style="width: 100%; max-width: 100%; display: block; height: auto;" />
+            <td style="padding: 0;">
+              <img src="banner.jpg" alt="VicOne AI Taskforce" style="width: 100%; max-width: 100%; display: block; height: auto;" />
             </td>
           </tr>
 
           <tr>
-            <td align="center" class="content-cell" style="padding: 40px 50px 10px 50px;">
-              <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #666666; font-style: italic;">
-                This monthly update highlights key AI-related initiatives and progress across the RD Group.
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="content-cell" style="padding: 40px 50px;">
-              <h1 style="margin: 0 0 20px 0; font-size: 28px; color: #333333; text-align: center;">AI Transformation</h1>
+            <td class="mobile-padding" style="padding: 40px 50px;">
+              <h1 style="margin: 0 0 20px 0; font-size: 26px; color: #333333; text-align: center; line-height: 1.2;">AI Transformation</h1>
               <p style="margin: 0 0 20px 0; font-size: 16px; color: #333333; line-height: 1.6;">
                 <strong>We're kicking off!</strong> Everyone's using AI now — that's not even a question anymore. But what value is it actually creating?
               </p>
               
               <p style="margin: 20px 0 10px 0; font-weight: bold; font-size: 16px; color: #9E1F63; text-align: center; text-transform: uppercase;">Our goals</p>
               <ul style="margin: 0 0 30px 0; padding: 0; list-style-type: none; font-size: 16px; color: #171717; line-height: 1.8;">
-                <li>• AI-native E2E Spec-Driven Development</li>
-                <li>• AI-enabled Cross-Domain Upskilling</li>
+                <li style="margin-bottom: 8px;">• AI-native E2E Spec-Driven Development</li>
+                <li style="margin-bottom: 8px;">• AI-enabled Cross-Domain Upskilling</li>
                 <li>• AI-driven Technical Transformation</li>
               </ul>
 
@@ -71,8 +57,6 @@
                 <tr>
                   <td style="font-size: 15px; color: #777777; line-height: 1.5;">
                     <strong>To know where we are:</strong> Auto-discovery agents scan GitHub, Confluence, and Jira monthly.
-                    <br /><br />
-                    ▶️ <strong>Discovery begins February 2026.</strong>
                   </td>
                 </tr>
               </table>
@@ -80,7 +64,23 @@
           </tr>
 
           <tr>
-            <td align="center" class="content-cell" style="background-color: #111827; padding: 40px 50px; color: #ffffff;">
+            <td class="mobile-padding" style="padding: 40px 50px; border-top: 1px solid #eeeeee;">
+              <h2 style="margin: 0 0 20px 0; font-size: 24px; color: #333333; text-align: center;">BizOps Agent Platform</h2>
+              <p style="margin: 0 0 20px 0; font-size: 16px; color: #333333; line-height: 1.6;">
+                AI transformation in business operations! We are advancing toward a sustainable BizOps agent platform.
+              </p>
+              <div style="font-size: 15px; color: #666666; line-height: 1.6;">
+                <strong>What we are working on:</strong>
+                <ul style="margin: 10px 0 0 0; padding-left: 20px;">
+                  <li>Formed a cross-functional working group in VicOne.</li>
+                  <li>Set up the n8n platform for workflow orchestration.</li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center" class="mobile-padding" style="background-color: #111827; padding: 40px 50px; color: #ffffff;">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                   <td align="left">
@@ -96,6 +96,7 @@
               </div>
             </td>
           </tr>
+
         </table>
       </td>
     </tr>
