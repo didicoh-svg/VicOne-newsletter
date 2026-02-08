@@ -4,27 +4,28 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>VicOne RD Monthly Update</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    /* 防止 iOS Outlook 自動調整字體大小 */
-    body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+  <style type="text/css">
+    /* 基礎重置 */
+    body { margin: 0; padding: 0; min-width: 100%; background-color: #f4f4f4; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    img { line-height: 100%; text-decoration: none; -ms-interpolation-mode: bicubic; border: 0; }
     
-    /* 針對手機寬度的 Media Query */
-    @media only screen and (max-width: 680px) {
-      .main-container { width: 100% !important; }
-      .content-padding { padding: 20px !important; } /* 減少手機上的留白，讓字體有更多空間 */
+    /* 手機版優化 */
+    @media only screen and (max-width: 600px) {
+      .main-container { width: 100% !important; max-width: 100% !important; }
+      .content-cell { padding: 30px 20px !important; } /* 減少側邊留白 */
+      .header-cell { padding: 30px 0 !important; }
+      h1 { font-size: 24px !important; }
     }
   </style>
 </head>
 <body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: Arial, Helvetica, sans-serif;">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f4f4f4; padding: 0;">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f4f4f4;">
     <tr>
       <td align="center">
-        <!-- Main Container -->
-        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="main-container" style="width: 100%; max-width: 680px; margin: 0 auto; border-collapse: collapse; background-color: #ffffff;">
+        <table border="0" cellpadding="0" cellspacing="0" width="680" class="main-container" style="width: 100%; max-width: 680px; margin: 0 auto; border-collapse: collapse; background-color: #ffffff;">
           
-          <!-- Header -->
           <tr>
-            <td align="center" style="background-color: #111827; padding: 40px 0;">
+            <td align="center" class="header-cell" style="background-color: #111827; padding: 40px 0;">
               <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
                   <td style="border: 2px solid #ffffff; padding: 5px 15px; color: #ffffff; font-size: 22px; font-weight: bold; letter-spacing:1px;">
@@ -38,35 +39,29 @@
             </td>
           </tr>
 
-          <!-- Hero Placeholder -->
           <tr>
             <td>
-              <img src="banner.jpg" alt="VicOne AI TaskForce" width="100%" style="width: 100%; display: block; height: auto; border: 0;" />
+              <img src="banner.jpg" alt="VicOne AI Taskforce" width="680" style="width: 100%; max-width: 100%; display: block; height: auto;" />
             </td>
           </tr>
 
-          <!-- Intro Content -->
           <tr>
-            <td align="center" style="padding: 50px 50px 10px 50px;">
+            <td align="center" class="content-cell" style="padding: 40px 50px 10px 50px;">
               <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #666666; font-style: italic;">
-                This monthly update highlights key AI-related initiatives and progress across the RD group.
+                This monthly update highlights key AI-related initiatives and progress across the RD Group.
               </p>
             </td>
           </tr>
 
-          <!-- Section: AI Transformation -->
           <tr>
-            <td style="padding: 40px 50px;">
+            <td class="content-cell" style="padding: 40px 50px;">
               <h1 style="margin: 0 0 20px 0; font-size: 28px; color: #333333; text-align: center;">AI Transformation</h1>
-              <p style="margin: 0 0 20px 0; font-size: 16px; color: #333333; line-height: 1.6; text-align: left;">
+              <p style="margin: 0 0 20px 0; font-size: 16px; color: #333333; line-height: 1.6;">
                 <strong>We're kicking off!</strong> Everyone's using AI now — that's not even a question anymore. But what value is it actually creating?
-              </p>
-              <p style="margin: 0 0 20px 0; font-size: 16px; color: #666666; line-height: 1.6; text-align: left;">
-                Starting this year, we're building visibility into our collective AI Transformation journey. Every month, we will see how AI is impacting our work and what capabilities we're building together.
               </p>
               
               <p style="margin: 20px 0 10px 0; font-weight: bold; font-size: 16px; color: #9E1F63; text-align: center; text-transform: uppercase;">Our goals</p>
-              <ul style="margin: 0 0 30px 0; padding: 0; list-style-type: none; font-size: 16px; color: #171717; line-height: 1.8; text-align: left;">
+              <ul style="margin: 0 0 30px 0; padding: 0; list-style-type: none; font-size: 16px; color: #171717; line-height: 1.8;">
                 <li>• AI-native E2E Spec-Driven Development</li>
                 <li>• AI-enabled Cross-Domain Upskilling</li>
                 <li>• AI-driven Technical Transformation</li>
@@ -74,132 +69,33 @@
 
               <table border="0" cellpadding="20" cellspacing="0" width="100%" style="background-color: #f9f9f9; border-radius: 4px;">
                 <tr>
-                  <td style="font-size: 16px; color: #777777; line-height: 1.5;">
-                    <strong>To know where we are:</strong> Auto-discovery agents scan GitHub, Confluence, and Jira monthly. Think of it like SEO — adding labels (e.g. <span style="background-color: #eee; padding: 1px 4px; border-radius: 2px; font-family: monospace;">ai</span> tag) or markers helps your work get discovered.
+                  <td style="font-size: 15px; color: #777777; line-height: 1.5;">
+                    <strong>To know where we are:</strong> Auto-discovery agents scan GitHub, Confluence, and Jira monthly.
                     <br /><br />
-                    ▶️ <strong>Discovery begins February 2026.</strong> Stay tuned — maybe we'll spot the SAE Data Pipeline Migration in action! 👀
+                    ▶️ <strong>Discovery begins February 2026.</strong>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- Section Divider -->
           <tr>
-            <td style="padding: 0 50px;"><div style="border-top: 1px solid #eeeeee;"></div></td>
-          </tr>
-
-          <!-- Section: AI Taskforce Weekly Sharing -->
-          <tr>
-            <td style="padding: 50px 50px;">
-              <h2 style="margin: 0 0 20px 0; font-size: 24px; color: #333333; text-align: center;">AI Taskforce Weekly Sharing</h2>
-              <p style="margin: 0 0 20px 0; font-size: 16px; color: #333333; line-height: 1.6; text-align: left;">
-                <strong>Making AI learning visible!</strong> To make the monthly AI Transformation visible in real in day-to-day practice, the RD AI Taskforce has been running a weekly sharing cadence since Nov 14, 2025.
-              </p>
-
-              <p style="margin: 25px 0 10px 0; font-weight: bold; font-size: 16px; color: #9E1F63; text-align: center; text-transform: uppercase;">Our goals</p>
-              <ul style="margin: 0 0 30px 0; padding: 0; list-style-type: ; font-size: 16px; color: #444444; line-height: 1.6; text-align: left;">
-                <li>Make AI knowledge and practical learnings shared quickly, transparently, and efficiently across VicOne RD teams — so we align faster, avoid duplicated efforts, and adopt AI safely and pragmatically in engineering.</li>
-                <li>Weekly sharing record (topics + notes): <a href="https://vicone.atlassian.net/wiki/x/3QJcFg" target="_blank" style="color:#6F9BF4;">01 Team RD AI Taskforce</a></li>
-                <li>MCP / Agents / Skills collection (playbooks + references): <a href="https://vicone.atlassian.net/wiki/x/AQEcGw" target="_blank" style="color:#6F9BF4;">MCP/Agent/Skill Collection</a>
-</li>
-              </ul>
-
-              <table border="0" cellpadding="20" cellspacing="0" width="100%" style="background-color: #f9f9f9; border-radius: 4px;">
-                <tr>
-                  <td style="font-size: 16px; color: #777777; line-height: 1.5;">
-                    <h3 style="margin: 0 0 10px 0; color: #9E1F63; font-size: 18px; text-align: center;">VicOne AI Matrix <span style="color: #333333;">(Ready to use AI!)</span></h3>
-                    <p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;">
-                      We’ve not only shared hands-on practices and lessons learned—we also delivered a major enablement milestone for RD teams.  A unified AI model gateway that enables RDs to access multiple AI models with a single API key—while providing centralized cost/usage visibility and enterprise-grade security controls. Please refer the detail in <a href="https://vicone.atlassian.net/wiki/x/AQC6GQ" target="_blank" style="color:#6F9BF4;">VicOne AI Matrix - Gateway to AI Models</a>
-<br /><br />
-                      From the monitor result of 2026-01 daily token usage by model, the spike (2026-01-17) reflects concentrated usage that directly translated into faster feature delivery (weeks → days) to deliver a full Firmware ELF identification system—4,000+ lines of production code in one day with a 93.7% success rate (598/639).
-                    </p>
-                  </td>
-                </tr>
-              </table>
-
-              </br></br></br>
-              <img src="chart.png" alt="Daily Token Usage by Model" width="100%" style="width: 100%; display: block; height: auto; border: 0;" />
-              
-            </td>
-          </tr>
-
-          <!-- Section: AI Tech Frontiers -->
-          <tr>
-            <td style="padding: 0 50px;">
-              <table border="0" cellpadding="20" cellspacing="0" width="100%" style="background-color: #f9f9f9; border-radius: 4px;">
-                <tr>
-                  <td style="font-size: 16px; color: #777777; line-height: 1.5;">
-                    <h3 style="margin: 0 0 10px 0; color: #9E1F63; font-size: 18px; text-align: center;">AI Tech Frontiers <span style="color: #333333;">(Coming Soon!) 🌍</span></h3>
-                    <p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;">
-                      Starting next cycle, the RD AI team will formalize a regular “AI Tech Frontiers” series — curating practical, high-signal updates from US/Silicon Valley (models, agent frameworks, dev workflows, security practices, and enterprise adoption patterns), and translating them into actionable pilots for RD teams.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              
-            </div></td>
-          </tr>
-
-
-          <!-- Section: BizOps Agent Platform -->
-          <tr>
-            <td style="padding: 50px 50px;">
-              <h2 style="margin: 0 0 20px 0; font-size: 24px; color: #333333; text-align: center;">BizOps Agent Platform</h2>
-              <p style="margin: 0 0 20px 0; font-size: 16px; color: #333333; line-height: 1.6; text-align: left;">
-                AI transformation in business operations! Building on our AI hackathon momentum, the RD group is advancing toward a sustainable BizOps agent platform—applying AI to real operational workflows, not just one-off experiments.
-              </p>
-              
-              <p style="margin: 20px 0 10px 0; font-weight: bold; font-size: 16px; color: #9E1F63; text-align: center; text-transform: uppercase;">Our goals</p>
-              <ul style="margin: 0 0 30px 0; padding: 0; font-size: 16px; color: #444444; line-height: 1.8; text-align: left;">
-                <li>Apply agentic automation to reduce manual, repetitive operational work</li>
-                <li>Build a governed BizOps agent platform with a unified entry point</li>
-                <li>Enable domain experts (HR / FIN / IT) to progressively optimize their own agents</li>
-              </ul>
-
-              <div style="font-size: 16px; color: #666666; line-height: 1.6;">
-                <strong>What we are working on:</strong>
-                <ul style="margin: 10px 0 20px 0; padding-left: 20px;">                 
-                  <li>
-                  Formed a cross-functional working group, with active contributions from PDG RD (<a href="mailto:chloe_su@vicone.com" style="color:#6F9BF4; text-decoration:none;">@Chloe Su (VicOne)</a>, <a href="mailto:flyfox_wu@vicone.com" style="color:#6F9BF4; text-decoration:none;">@Flyfox Wu (VicOne)</a>, <a href="mailto:hanwen_chang@vicone.com" style="color:#6F9BF4; text-decoration:none;">@Hanwen Chang (VicOne)</a>, <a href="mailto:dave_he@vicone.com" style="color:#6F9BF4; text-decoration:none;">@Dave He (VicOne)</a>), FIN &amp; HR (<a href="mailto:evelyn_kuo@vicone.com" style="color:#6F9BF4; text-decoration:none;">@Evelyn Kuo (VicOne)</a>, <a href="mailto:kakimi_tomoya@vicone.com" style="color:#6F9BF4; text-decoration:none;">@Kakimi Tomoya (VicOne)</a>, <a href="mailto:sara_lin@vicone.com" style="color:#6F9BF4; text-decoration:none;">@Sara Lin (VicOne)</a>) and BizOps Engineering (<a href="mailto:yuchen_lee@vicone.com" style="color:#6F9BF4; text-decoration:none;">@Yuchen Lee (VicOne)</a>, <a href="mailto:wianne_ranes@vicone.com" style="color:#6F9BF4; text-decoration:none;">@Wianne Ranes (VicOne)</a>, <a href="mailto:cydric_justine_bonita@vicone.com" style="color:#6F9BF4; text-decoration:none;">@Cydric Justine Bonita (VicOne)</a>) — thank you to everyone who jumped in early
-                  </li>
-                  <li>Set up the n8n platform as the foundation for workflow orchestration and agent execution</li>
-                </ul>
-                
-                <p>This establishes a shared baseline for collaboration, iteration, and reuse.</p>
-                
-                <strong>What’s coming up</strong>
-                <ul style="margin: 10px 0 0 0; padding-left: 20px;">
-                  <li>Complete the first HR draft automation case in n8n to validate the end-to-end flow</li>
-                  <li>Start reviewing and decomposing FIN workflows for upcoming BizOps agent use cases</li>
-                </ul>
-                
-                <p>If you’re curious about applying AI to operational workflows and would like to contribute, you’re welcome to join the taskforce!</p>
-              </div>
-
-            </td>
-          </tr>
-
-          <!-- Footer -->
-          <tr>
-            <td align="center" style="background-color: #111827; padding: 50px 50px; color: #ffffff;">
+            <td align="center" class="content-cell" style="background-color: #111827; padding: 40px 50px; color: #ffffff;">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                   <td align="left">
-                    <img src="vicone_logo.png" alt="VicOne" width="125" style="display: block; width: 125px; height: auto; border: 0;" />
+                    <img src="vicone_logo.png" alt="VicOne" width="125" style="display: block; width: 125px; height: auto;" />
                   </td>
                   <td align="right" style="font-size: 12px; font-style: italic; color: #9ca3af;">
                     Driving Automotive Cybersecurity Forward
                   </td>
                 </tr>
               </table>
-              <div style="border-top: 1px solid #1f2937; margin: 20px 0; padding-top: 20px; font-size: 16px; color: #6b7280; line-height: 1.5; text-align: left;">
-                &copy; 2026 VicOne Inc. All rights reserved. <br />
-                This email was sent to members of the VicOne RD Group.
+              <div style="border-top: 1px solid #1f2937; margin: 20px 0; padding-top: 20px; font-size: 14px; color: #6b7280; text-align: left;">
+                &copy; 2026 VicOne Inc. All rights reserved.
               </div>
             </td>
           </tr>
-
         </table>
       </td>
     </tr>
